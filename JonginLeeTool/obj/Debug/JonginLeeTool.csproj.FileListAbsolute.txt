@@ -1,0 +1,46 @@
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.exe
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.pdb
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\resources.pri
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\AppxManifest.xml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.build.appxrecipe
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.g.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.g.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\XamlTypeInfo.g.cs
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\App.xaml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.xaml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.xaml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\JonginLeeTool.exe
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\JonginLeeTool.pdb
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\priconfig.xml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\layout.resfiles
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\resources.resfiles
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\pri.resfiles
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\LanguageQualifiers.txt
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\ProjectArchitectures.txt
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.g.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.g.i.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.g.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\XamlTypeInfo.g.cs
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\App.xaml
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.xaml
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.xaml
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\JonginLeeTool.exe
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\JonginLeeTool.pdb
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.exe
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.pdb
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\bin\Debug\resources.pri
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\bin\Debug\AppxManifest.xml
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.build.appxrecipe
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\priconfig.xml
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\layout.resfiles
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\resources.resfiles
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\pri.resfiles
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\LanguageQualifiers.txt
+D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\ProjectArchitectures.txt

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>종인-PC</Machine>
+    <WindowsUser>종인</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>544B0639D14251410E970F134BB572F858A9B75B458CC2231BE53DA99047E503</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>83c96d18-e13d-4233-8bb6-14f88380593f_1.0.0.0_neutral__y924chbtmyzq4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>83c96d18-e13d-4233-8bb6-14f88380593f_y924chbtmyzq4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>83c96d18-e13d-4233-8bb6-14f88380593f</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=종인</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-10-24T10:46:37.452</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.exe">
+      <PackagePath>JonginLeeTool.exe</PackagePath>
+      <Modified>2013-11-04T09:54:20.494</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\JonginLeeTool.pdb">
+      <PackagePath>JonginLeeTool.pdb</PackagePath>
+      <Modified>2013-11-04T09:54:20.474</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T14:11:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-10-24T10:41:55.121</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-07-26T11:22:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-11-04T09:54:19.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-10-24T10:46:36.589</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
