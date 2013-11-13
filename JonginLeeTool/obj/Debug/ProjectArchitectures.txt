@@ -1,1 +1,1 @@
-D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\JonginLeeTool.csproj;neutral
+C:\Users\종인\Documents\GitHub\JonginLeeTool\JonginLeeTool\JonginLeeTool.csproj;neutral

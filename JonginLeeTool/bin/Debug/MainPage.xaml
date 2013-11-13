@@ -137,7 +137,7 @@
 
 
         </ScrollViewer>
-        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴" VerticalAlignment="Top" Height="70" Width="309" FontSize="50" />
+        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴-" VerticalAlignment="Top" Height="70" Width="309" FontSize="50" />
 
     </Grid>
 </Page>
