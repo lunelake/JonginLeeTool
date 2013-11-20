@@ -19,7 +19,6 @@ D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\Jo
 D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\layout.resfiles
 D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\resources.resfiles
 D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\pri.resfiles
-D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\LanguageQualifiers.txt
 D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\ProjectArchitectures.txt
 D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.i.cs
 D:\바람인터렉티브\바람인터렉티브\JonginLeeTool\JonginLeeTool\obj\Debug\App.g.cs
@@ -67,3 +66,17 @@ C:\Users\종인\Documents\GitHub\JonginLeeTool\JonginLeeTool\obj\Debug\resources
 C:\Users\종인\Documents\GitHub\JonginLeeTool\JonginLeeTool\obj\Debug\pri.resfiles
 C:\Users\종인\Documents\GitHub\JonginLeeTool\JonginLeeTool\obj\Debug\LanguageQualifiers.txt
 C:\Users\종인\Documents\GitHub\JonginLeeTool\JonginLeeTool\obj\Debug\ProjectArchitectures.txt
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\priconfig.xml.intermediate
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\layout.resfiles.intermediate
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\resources.resfiles.intermediate
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\pri.resfiles.intermediate
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\qualifiers.txt
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\qualifiers.txt.intermediate
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\App.xbf
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\Common\StandardStyles.xbf
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\bin\Debug\MainPage.xbf
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\App.xbf
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\MainPage.xbf
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\XamlSaveStateFile.xml
+D:\바람인터렉티브\바람인터렉티브\바람 연구소\JonginLeeTool\JonginLeeTool\obj\Debug\Common\StandardStyles.xbf

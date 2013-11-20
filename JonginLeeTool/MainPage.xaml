@@ -12,7 +12,7 @@
             <StackPanel Orientation="Horizontal" Margin="0,0,0,0" VerticalAlignment="Bottom" Height="1050" >
                 <ScrollViewer Margin="0,0,0,100" VerticalAlignment="Top" Width="320" VerticalScrollBarVisibility="Auto">
                     <StackPanel Width="320">
-                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="MVVM 헬퍼" VerticalAlignment="Top" Height="48" Width="460" FontSize="40" />
+                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="MVVM 헬퍼" VerticalAlignment="Top" Height="48" Width="308" FontSize="40" />
                         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="프로퍼티 이름(쉼표로 구분)" FontSize="25" VerticalAlignment="Top"/>
                         <TextBox x:Name="PropertyNameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top"  Width="300" TextChanged="PropertyNameTextBox_TextChanged" KeyDown="PropertyNameTextBox_KeyDown"/>
                         <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="프로퍼티종류" FontSize="25" VerticalAlignment="Top"/>
@@ -67,7 +67,12 @@
                 </ScrollViewer>
                 <ScrollViewer Margin="0,0,0,100" VerticalAlignment="Top" Width="320" VerticalScrollBarVisibility="Auto">
                     <StackPanel Width="320">
-                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="번역 헬퍼" VerticalAlignment="Top" Height="48" Width="460" FontSize="40" />
+                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="번역 헬퍼" VerticalAlignment="Top" Height="48" Width="300" FontSize="40" />
+                        <Grid>
+                            <Button Content="클립보드 연동 및 자동번역" Height="36" VerticalAlignment="Top" Width="209" Margin="7,0,0,0" Click="Button_Click_9"/>
+                            <TextBlock x:Name="AutoWorkStatus" HorizontalAlignment="Left" Margin="230,6,0,2" TextWrapping="Wrap" Text="" Width="77"/>
+                        </Grid>
+
                         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="프로퍼티 이름" FontSize="25" VerticalAlignment="Top"/>
                         <TextBox x:Name="TranslatePropertyNameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top"  Width="300" TextChanged="PropertyNameTextBox_TextChanged" KeyDown="PropertyNameTextBox_KeyDown"/>
 
@@ -132,12 +137,12 @@
 
                     </StackPanel>
                 </ScrollViewer>
-               
+
             </StackPanel>
 
 
         </ScrollViewer>
-        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴-" VerticalAlignment="Top" Height="70" Width="309" FontSize="50" />
+        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴" VerticalAlignment="Top" Height="70" Width="673" FontSize="50" />
 
     </Grid>
 </Page>

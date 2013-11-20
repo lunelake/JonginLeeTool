@@ -12,20 +12,20 @@
             <StackPanel Orientation="Horizontal" Margin="0,0,0,0" VerticalAlignment="Bottom" Height="1050" >
                 <ScrollViewer Margin="0,0,0,100" VerticalAlignment="Top" Width="320" VerticalScrollBarVisibility="Auto">
                     <StackPanel Width="320">
-                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="MVVM 헬퍼" VerticalAlignment="Top" Height="48" Width="460" FontSize="40" />
+                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="MVVM 헬퍼" VerticalAlignment="Top" Height="48" Width="308" FontSize="40" />
                         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="프로퍼티 이름(쉼표로 구분)" FontSize="25" VerticalAlignment="Top"/>
-                        <TextBox x:ConnectionId='25' x:Name="PropertyNameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top"  Width="300"                                                                                    />
+                        <TextBox x:ConnectionId='26' x:Name="PropertyNameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top"  Width="300"                                                                                    />
                         <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="프로퍼티종류" FontSize="25" VerticalAlignment="Top"/>
-                        <ComboBox x:ConnectionId='26' x:Name="PropertyTypeComboBox" MinWidth="130"  Margin="10,10,10,0"                                                         >
+                        <ComboBox x:ConnectionId='27' x:Name="PropertyTypeComboBox" MinWidth="130"  Margin="10,10,10,0"                                                         >
                             <ComboBoxItem Content="string"/>
                             <ComboBoxItem Content="int"/>
                             <ComboBoxItem Content="bool"/>
                             <ComboBoxItem Content="Datetime"/>
                             <ComboBoxItem Content="커스텀"/>
                         </ComboBox>
-                        <TextBox x:ConnectionId='27' x:Name="PropertyTypeTextBox" HorizontalAlignment="Left" Margin="10,20,0,0" Text="" VerticalAlignment="Top"  Width="300"                                              />
+                        <TextBox x:ConnectionId='28' x:Name="PropertyTypeTextBox" HorizontalAlignment="Left" Margin="10,20,0,0" Text="" VerticalAlignment="Top"  Width="300"                                              />
                         <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="프로퍼티 체인지드 이벤트" FontSize="25" VerticalAlignment="Top"/>
-                        <TextBox x:ConnectionId='28' x:Name="RaiseTypeTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="RaisePropertyChanged" VerticalAlignment="Top"  Width="300"                                           />
+                        <TextBox x:ConnectionId='29' x:Name="RaiseTypeTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="RaisePropertyChanged" VerticalAlignment="Top"  Width="300"                                           />
                         <TextBlock HorizontalAlignment="Left" Margin="10,20,10,0" TextWrapping="Wrap" Text="출력타입" FontSize="25" VerticalAlignment="Top"/>
                         <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
                             <RadioButton x:Name="OutputTypeButton1" Content="출력타입A"
@@ -42,10 +42,10 @@
                       Margin="0,0,0,0" HorizontalAlignment="Left" FontSize="12" VerticalAlignment="Top" GroupName="DataMemberGroup"/>
                         </StackPanel>
                         <StackPanel x:Name="OutputPanel" IsHitTestVisible="False" Orientation="Horizontal" Margin="10,10,0,0">
-                            <Button x:ConnectionId='31' Content="출력" Height="53" Width="62"                     />
-                            <Button x:ConnectionId='32' Content="전체 복사" Height="53" Width="65"                       />
-                            <Button x:ConnectionId='33' Content="변수만 복사" Height="53" Width="78"                       />
-                            <Button x:ConnectionId='34' Content="프로퍼티만 복사" Height="53" Width="107"                       />
+                            <Button x:ConnectionId='32' Content="출력" Height="53" Width="62"                     />
+                            <Button x:ConnectionId='33' Content="전체 복사" Height="53" Width="65"                       />
+                            <Button x:ConnectionId='34' Content="변수만 복사" Height="53" Width="78"                       />
+                            <Button x:ConnectionId='35' Content="프로퍼티만 복사" Height="53" Width="107"                       />
                         </StackPanel>
                         <ScrollViewer Margin="10,0,0,0" MaxHeight="150">
                             <TextBlock x:Name="OutputTextblock" />
@@ -57,17 +57,22 @@
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock HorizontalAlignment="Left" Margin="10,0,10,0" TextWrapping="Wrap" Text="{Binding}" Width="200" FontSize="20" VerticalAlignment="Top"/>
-                                        <Button x:ConnectionId='30' Margin="10,0,10,0" Content="복사" Height="40" Tag="{Binding}"                        />
+                                        <Button x:ConnectionId='31' Margin="10,0,10,0" Content="복사" Height="40" Tag="{Binding}"                        />
                                     </StackPanel>
                                 </DataTemplate>
                             </ListBox.ItemTemplate>
                         </ListBox>
-                        <Button x:ConnectionId='29' Margin="10,0,10,0" Content="내용 지우기" Height="40" Width="160"                        />
+                        <Button x:ConnectionId='30' Margin="10,0,10,0" Content="내용 지우기" Height="40" Width="160"                        />
                     </StackPanel>
                 </ScrollViewer>
                 <ScrollViewer Margin="0,0,0,100" VerticalAlignment="Top" Width="320" VerticalScrollBarVisibility="Auto">
                     <StackPanel Width="320">
-                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="번역 헬퍼" VerticalAlignment="Top" Height="48" Width="460" FontSize="40" />
+                        <TextBlock HorizontalAlignment="Left" Margin="10,18,0,0" TextWrapping="Wrap" Text="번역 헬퍼" VerticalAlignment="Top" Height="48" Width="300" FontSize="40" />
+                        <Grid>
+                            <Button x:ConnectionId='25' Content="클립보드 연동 및 자동번역" Height="36" VerticalAlignment="Top" Width="209" Margin="7,0,0,0"                       />
+                            <TextBlock x:Name="AutoWorkStatus" HorizontalAlignment="Left" Margin="230,6,0,2" TextWrapping="Wrap" Text="" Width="77"/>
+                        </Grid>
+
                         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="프로퍼티 이름" FontSize="25" VerticalAlignment="Top"/>
                         <TextBox x:ConnectionId='1' x:Name="TranslatePropertyNameTextBox" HorizontalAlignment="Left" Margin="10,10,0,0" Text="" VerticalAlignment="Top"  Width="300"                                                                                    />
 
@@ -132,12 +137,12 @@
 
                     </StackPanel>
                 </ScrollViewer>
-               
+
             </StackPanel>
 
 
         </ScrollViewer>
-        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴-" VerticalAlignment="Top" Height="70" Width="309" FontSize="50" />
+        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="존긴리툴" VerticalAlignment="Top" Height="70" Width="673" FontSize="50" />
 
     </Grid>
 </Page>

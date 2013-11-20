@@ -16,6 +16,7 @@ using Windows.ApplicationModel.DataTransfer;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 // 빈 페이지 항목 템플릿에 대한 설명은 http://go.microsoft.com/fwlink/?LinkId=234238에 나와 있습니다.
 
@@ -179,7 +180,6 @@ namespace JonginLeeTool
             OutputPanelTestVisible();
         }
 
-
         private void PropertyTypeTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             OutputPanelTestVisible();
@@ -248,23 +248,41 @@ namespace JonginLeeTool
             }
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private async void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            await TranslateTask();
+        }
+
+        private async Task TranslateTask()
         {
             string enginput = TranslateEnglishTextBox.Text;
             string korinput = TranslateKoreanTextBox.Text;
-            Translate("en","zh-CN",enginput, TranslateChineseTextBox);
-            Translate("en", "zh-TW", enginput, TranslateTaiwanTextBox);
-            Translate("en", "es", enginput, TranslateSpanishTextBox);
-            Translate("en", "pt", enginput, TranslatePortugueseTextBox);
-            Translate("en", "ru", enginput, TranslateRussianTextBox);
-            Translate("ko", "ja", korinput, TranslateJapanTextBox);
-            Translate("en", "de", enginput, TranslateGermanTextBox);
-            Translate("en", "fr", enginput, TranslateFranceTextBox);
-            Translate("en", "it", enginput, TranslateItalyTextBox);
-
+            TranslateTextBoxInitialize();
+            await Translate("en", "zh-CN", enginput, TranslateChineseTextBox);
+            await Translate("en", "zh-TW", enginput, TranslateTaiwanTextBox);
+            await Translate("en", "es", enginput, TranslateSpanishTextBox);
+            await Translate("en", "pt", enginput, TranslatePortugueseTextBox);
+            await Translate("en", "ru", enginput, TranslateRussianTextBox);
+            await Translate("ko", "ja", korinput, TranslateJapanTextBox);
+            await Translate("en", "de", enginput, TranslateGermanTextBox);
+            await Translate("en", "fr", enginput, TranslateFranceTextBox);
+            await Translate("en", "it", enginput, TranslateItalyTextBox);
         }
 
-        private async void Translate(string fromcode, string contrycode, string input, TextBox output)
+        private void TranslateTextBoxInitialize()
+        {
+            TranslateChineseTextBox.Text = "";
+            TranslateTaiwanTextBox.Text = "";
+            TranslateSpanishTextBox.Text = "";
+            TranslatePortugueseTextBox.Text = "";
+            TranslateRussianTextBox.Text = "";
+            TranslateJapanTextBox.Text = "";
+            TranslateGermanTextBox.Text = "";
+            TranslateFranceTextBox.Text = "";
+            TranslateItalyTextBox.Text = "";
+        }
+
+        private async Task Translate(string fromcode, string contrycode, string input, TextBox output)
         {
             HttpClient http = new System.Net.Http.HttpClient();
             HttpResponseMessage response = await http.GetAsync("http://translate.google.com/translate_a/t?client=t&hl=ko&sl=" + fromcode + "&tl=" + contrycode + "&ie=UTF-8&oe=UTF-8&multires=1&prev=btn&ssel=5&tsel=5&sc=1&q=" + input);
@@ -282,10 +300,32 @@ namespace JonginLeeTool
             output.Text = "";
             responseBodyAsText = await response.Content.ReadAsStringAsync();
 
-            string aa = "[[[\"";
+            string aa = "[[";
             int a1 = responseBodyAsText.IndexOf(aa) + aa.Length;
-            int a2 = responseBodyAsText.IndexOf("\",\"", a1);
-            string saying = responseBodyAsText.Substring(a1, a2 - a1);
+            int a2 = responseBodyAsText.IndexOf("]]", a1);
+            string all = responseBodyAsText.Substring(a1, a2 - a1);
+
+            int z = 0;
+            string saying = "";
+            for (int i = 0; i < 10; i++)
+            {
+                string bb = "[\"";
+                if( all.IndexOf(bb, z) != -1)
+                {
+                    int b1 = all.IndexOf(bb, z) + bb.Length;
+                    int b2 = all.IndexOf("\",\"", b1);
+                    string word = all.Substring(b1, b2-b1);
+                    if (i == 0)
+                        saying = word;
+                    else
+                        saying = saying + " " + word;
+
+                    z = b2;
+                }
+            }
+
+            saying = ReplaceLetter(saying, "\\u003e", ">");
+            saying = ReplaceLetter(saying, "\\u003c", "<");
 
             output.Text += saying;
         }
@@ -447,6 +487,76 @@ namespace JonginLeeTool
             CopyToClipboard(getTranslateAllCode());
         }
 
+        private async void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                AutoWorkStatus.Text = "작동중";
+                string text = await Clipboard.GetContent().GetTextAsync();
+
+                string aa = "public static string ";
+                int a1 = text.IndexOf(aa) + aa.Length;
+                int a2 = text.IndexOf("{", a1);
+                string propertyname = text.Substring(a1, a2 - a1).Trim();
+
+                string bb = "languageIndex == 0";
+                string bb0 = "return \"";
+                int b1 = text.IndexOf(bb, a2) + bb.Length;
+                int b2 = text.IndexOf(bb0, b1) + bb0.Length;
+                int b3 = text.IndexOf("\"", b2 + 1);
+                string engword = text.Substring(b2, b3 - b2);
+
+                string cc = "languageIndex == 1";
+                string cc0 = "return \"";
+                int c1 = text.IndexOf(cc, a2) + cc.Length;
+                int c2 = text.IndexOf(cc0, c1) + cc0.Length;
+                int c3 = text.IndexOf("\"", c2 + 1);
+                string korword = text.Substring(c2, c3 - c2);
+
+                TranslatePropertyNameTextBox.Text = propertyname;
+                TranslateEnglishTextBox.Text = engword;
+                TranslateKoreanTextBox.Text = korword;
+
+                await TranslateTask();
+                TranslateOutputTextblock.Text = getTranslateAllCode();
+                CopyToClipboard(getTranslateAllCode());
+                AutoWorkStatus.Text = "작동완료";
+            }
+            catch
+            {
+                AutoWorkStatus.Text = "에러났네?-_-;;";
+            }
+
+
+
+        }
+
+        public string ReplaceLetter(string data, string replaceWhat, string replaceHow)
+        {
+            try
+            {
+                int z = 0;
+                for (int i = 0; i < data.Length; i++)
+                {
+                    if (data.IndexOf(replaceWhat, z) != -1)
+                    {
+                        int a1 = data.IndexOf(replaceWhat, z);
+                        data = data.Substring(0, a1) + replaceHow + data.Substring(a1 + replaceWhat.Length, data.Length - a1 - replaceWhat.Length);
+                        z = a1;
+                        z = z - replaceWhat.Length + replaceHow.Length;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                return data;
+            }
+            catch
+            {
+                return data;
+            }
+        }
 
     }
 }
